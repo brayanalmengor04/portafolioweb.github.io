@@ -16,11 +16,11 @@ fondo.addEventListener('click', () => {
         fondo.classList.add('animate')
     },100)
 });  
-const proyectos = document.querySelector('.container-proyectos')
+const proyectos = document.querySelector('.container__fondo-proyectos')
 proyectos.addEventListener('click', () => {
-  proyectos.classList.remove('animate')
+  proyectos.classList.remove('animacion')
     setTimeout(()=>{
-        proyectos.classList.add('animate')
+        proyectos.classList.add('animacion')
     },100)
 }); 
  
