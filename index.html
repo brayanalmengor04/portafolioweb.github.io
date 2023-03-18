@@ -15,7 +15,7 @@
     <!--  -->
     <meta http-equiv="cache-control" content="no-cache"/>
     <link rel="shortcut icon" href="/portafolioweb.github.io/image/Logotipo(1).jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/portafolioweb.github.io/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kameron&display=swap" rel="stylesheet">  
@@ -37,8 +37,8 @@
         <div class="container__social">
             <div class="container__logotipo">
                 <i>
-                    <a href="index.html">
-                        <img src="/portafolioweb.github.io/image/Logotipo(1).jpg"   alt="logotipo"></i> 
+                    <a href="/portafolioweb.github.io/index.html">
+                        <img src="/portafolioweb.github.io/image/Logotipo(1).jpg"   alt="logotipo" title="logotipo" ></i> 
                     </a>
                 <span>Portafolio Web</span>
             </div>
@@ -58,11 +58,11 @@
     </header> 
     <nav class="container__nav">
         <ul class="container__ul-principal">
-            <li> <a href="#inicio">Inicio</a> </li>
-            <li> <a href="#sobremi">Sobre Mi</a> </li>
-            <li> <a href="#servicios">Servicios</a> </li>
-            <li> <a href="#contacto">Contacto</a> </li> 
-            <li> <a href="#proyectos">Proyectos</a></li>
+            <li> <a href="#inicio" title="inicio">Inicio</a> </li>
+            <li> <a href="#sobremi" title="sobremi">Sobre Mi</a> </li>
+            <li> <a href="#servicios" title="servicios" >Servicios</a> </li>
+            <li> <a href="#contacto" title="contacto">Contacto</a> </li> 
+            <li> <a href="#proyectos" title="proyectos">Proyectos</a></li>
             
         </ul>
         <ul class="container__ul-responsive">
@@ -75,11 +75,11 @@
     <nav class="container__nav__menu-movil" id="menumovil">
         <ul class="container__ulmenumovil-responsive">
         <div class="container__boton-salir"><ion-icon name="close-outline" onclick="salirMenu()"></ion-icon></div> 
-        <li><a href="#inicio" onclick="salirMenu()">Inicio</a></li>
-        <li><a href="#sobremi"onclick="salirMenu()">Sobre Mi</a></li>
-        <li><a href="#servicios"onclick="salirMenu()">Servicios</a></li>
-        <li><a href="#contacto"onclick="salirMenu()">Contacto</a></li>
-        <li><a href="#proyectos"onclick="salirMenu()">Proyectos</a></li>
+        <li><a href="#inicio" onclick="salirMenu()" title="inicio" >Inicio</a></li>
+        <li><a href="#sobremi"onclick="salirMenu()" title="sobremi" >Sobre Mi</a></li>
+        <li><a href="#servicios"onclick="salirMenu()" title="servicios" >Servicios</a></li>
+        <li><a href="#contacto"onclick="salirMenu()" title="contacto">Contacto</a></li>
+        <li><a href="#proyectos"onclick="salirMenu()" title="proyectos">Proyectos</a></li>
         </ul>
     </nav>
 <!--  -->
@@ -109,14 +109,14 @@
                 <div class="container__encuentrame"> 
                     <div class="container__encuentrame-iconos">
                         
-                        <a href="https://www.linkedin.com/in/brayan-almengor" target="_blank">
+                        <a href="https://www.linkedin.com/in/brayan-almengor" title="link_linkendin" target="_blank">
                             <ion-icon name="logo-linkedin" style="font-size: 30px; color: #5779e7; ">
                         </ion-icon>
                         </a>
                     </div>
 
                     <div class="container__encuentrame-iconos">
-                        <a href="https://github.com/brayanalmengor04" target="_blank">
+                        <a href="https://github.com/brayanalmengor04" title="link_github" target="_blank">
                            <ion-icon name="logo-github" style="font-size: 30px; color: #0e0d0d;"></ion-icon>
                        </a>
                         
@@ -129,7 +129,7 @@
                     </div>
                     <div class="container__encuentrame-iconos">
                         
-                        <a href="https://www.tiktok.com/@aabj_cx?is_from_webapp=1&sender_device=pc" target="_blank">
+                        <a href="https://www.tiktok.com/@aabj_cx?is_from_webapp=1&sender_device=pc" title="link_tiktok" target="_blank">
                             <ion-icon name="logo-tiktok" style="font-size: 30px; color: #171718;"></ion-icon>
                         </a>
                     </div> 
@@ -159,29 +159,29 @@
             <div class="servicios-container__principal">
                 <div class="servicios-container">
                         <ion-icon name="logo-html5"></ion-icon> 
-                        <h5>Etiquetado HTML5</h5>
+                        <h3>Etiquetado HTML5</h3>
                 </div>
                 <div class="servicios-container">
                     <i class="bi bi-file-code"></i>
-                    <h5>Desarrollo Movil</h6>
+                    <h3>Desarrollo Movil</h3>
                 </div>
                 <div class="servicios-container">
                     <i class="bi bi-browser-chrome"></i>
-                    <h5>Desarrollo Web</h6>
+                    <h3>Desarrollo Web</h3>
                 </div> 
                 <div class="servicios-container">
                     <ion-icon name="logo-angular"></ion-icon> 
-                        <h5>Framework Angular</h6>
+                        <h3>Framework Angular</h3>
                 </div>
                 
                 <div class="servicios-container">
                     <i class="bi bi-git"></i>
-                    <h5>Gestion Version Git</h6>
+                    <h3>Gestion Version Git</h3>
                 </div> 
 
                 <div class="servicios-container">
                     <i class="bi bi-database"></i>
-                    <h5>Data <br>Base</h6>
+                    <h3>Data Base</h3>
                 </div>
 
             </div>
@@ -197,7 +197,7 @@
         <div class="container__principal-proyectos">
             
             <div  class="proyectos" onmouseover="mostrar()" onmouseout="noMostrar()">  
-                        <h6>Portafolio Web</h6>
+                        <h4>Portafolio Web</h4>
                         <img src="/portafolioweb.github.io/image/proyectoweb.jpg"  alt="portafolio-web" title="website"> 
                         <p > 
                         Proyecto portafolio web . Pagina web donde almacenera todo lo relacionado a mis conocimientos y 
@@ -205,7 +205,7 @@
                         </p>
                     </div>  
                     <div class="proyectos" onmouseover="mostrar()" onmouseout="noMostrar()" > 
-                        <h6>Proximo Proyecto</h6>
+                        <h4>Proximo Proyecto</h4>
                         <img src="/portafolioweb.github.io/image/fondo2.jpg" alt="proximo-proyecto" title="fondo2"> 
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perspiciatis soluta voluptatibus eum mollitia incidunt voluptas ipsa aliquam vel magni, sit doloribus recusandae sequi officia id assumenda natus, eligendi beatae.</p>
                     </div>
@@ -244,9 +244,9 @@
             <div class="container__footer__ubicacion-caja"> 
                 <h2>Ubicacion</h2>
                 <div class="container__footer__ubicacion-iconos">
-                    <h6><ion-icon name="location"></ion-icon>Panama , Panama Oeste</h6>
-                    <h6><ion-icon name="call"></ion-icon>+507 6542-5634</h6>                    
-                    <h6><ion-icon name="mail"></ion-icon>infobrayan@gmail.com</h6>
+                    <h5><ion-icon name="location"></ion-icon>Panama , Panama Oeste</h5>
+                    <h5><ion-icon name="call"></ion-icon>+507 6542-5634</h5>                    
+                    <h5><ion-icon name="mail"></ion-icon>infobrayan@gmail.com</h5>
                 </div>
             </div>
         </div>  
@@ -259,11 +259,11 @@
                 action="https://formspree.io/f/mwkjqaly" 
                 method="POST"
                 > 
-                    <h6>Email*</h6>
+                    <h5>Email*</h5>
                     <div class="container__footer__form-input">
                         <input type="email" name="correo" required placeholder="user@gmail.com"/> 
                     </div>
-                    <h6>Mensaje*</h6> 
+                    <h5>Mensaje*</h5> 
                     <div class="container__footer__form-input"> 
                         <textarea name="asunto" id="texto"  placeholder="Escribe tu mensaje"></textarea>
                     </div>  
@@ -277,7 +277,7 @@
         <h6>Diseñado por Brayan Almengor </h6>
     </div>
      <!-- --------------------------------------------------------------------------------  -->
-    <script src="app.js"></script>
+    <script src="/portafolioweb.github.io/js/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>    
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
