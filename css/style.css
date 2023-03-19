@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +6,7 @@
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
     transition: all 0.7s; 
 }   
-
+/* -------------------------------- */
 body { 
     background-image: url(/portafolioweb.github.io/image/walpaper.jpg);
     background-repeat: no-repeat;
@@ -23,6 +22,8 @@ html {
     scroll-behavior: smooth; 
 }
  
+/* HTML-BODY------- */
+
 .container__social{
     display: flex;
     justify-content: space-around;
@@ -741,42 +742,58 @@ html {
         flex-direction: column;
     } 
    
-    /* Section about */ 
-    .container__sobremi-texto h2{
-        font-size: 2em;
+    /* Section about */
+    
+    .container__sobremi-texto{
+        position: relative; 
+        display: flex;  
+        justify-content:center ;   
+        flex-direction: column;
+    } 
+    .container__sobremi-texto p{
+        padding: 80px 0 0 0;
+        width: 100%; 
+        font-size: 1.2em;  
+    }
+
+    .container__sobremi-porfile{
+        position: absolute; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
+        height: 100vh; 
+    }
+    .container__sobremi-porfile img {
+        width: 130px;
+    }   
+    .container__sobremi-porfile h2{
+        font-size: 1.7em;
+    }
+    .container__sobremi-porfile.animate{  
+        animation: mover 2s both;
     }
     
-    .container__sobremi-texto p{
-        margin-top: 50px;
-        font-size: 1.2em;
-    } 
-    .container__sobremi-texto> h3{ 
-        font-size: 1.2em;
-        margin-top: 10px;
+    @keyframes mover {
+        0%{width:100%;height: 100%;}
+        100%{width:100%;height: 30%; border-radius: 0% 20% 10% 10%; background:#0a0a0a77;}
     }
-    .container__encuentrame{
-        margin: 0;  
-        padding: 20px;
-    } 
-    .container__encuentrame-iconos{  
+
+
+    .container__sobrenmi-aionic{
         padding: 0px; 
-        margin-right: 8px;        
+        margin: 0;
+        width: 100%; 
     } 
-
-    .container__descargarcv button{ 
-        font-size: 1em;
-        width: 150px;
-        padding: 10px;
-    } 
-    .container__descargarcv button:hover{
-        width: 250px;
+    .container__encuentrame-iconos{
+        margin: 10px;
+    }
+    .container__descargarcv{ 
+        margin: 0;
+        padding: 0;
     }
 
-    .container__sobremi-porfile img{
-        width: 130px;
-    }
-
-
+    
     /*Section Servicios  */
     
     .container__section-servicios h2{
@@ -855,8 +872,5 @@ html {
         font-size: 1.2em;
         font-weight: 100;
     }
-    
-    .container__whatsapp{ 
-        display: none;
-    }
+
 }
