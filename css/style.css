@@ -5,6 +5,7 @@
     /* font-family: 'Kameron', serif;   */
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
     transition: all 0.7s; 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }   
 /* -------------------------------- */
 body { 
