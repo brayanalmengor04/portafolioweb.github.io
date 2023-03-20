@@ -23,13 +23,6 @@ proyectos.addEventListener('click', () => {
         proyectos.classList.add('animacion')
     },100)
 });  
-const achicarimg = document.querySelector('.container__proyecto-image img')
-achicarimg.addEventListener('click', () => {
-  achicarimg.classList.remove('animateimg')
-    setTimeout(()=>{
-        achicarimg.classList.add('animateimg')
-    },100)
-}); 
  
 function mostrar (){
     document.querySelector('.proyectos p').style.visibility='visible';
