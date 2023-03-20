@@ -16,11 +16,18 @@ fondo.addEventListener('click', () => {
         fondo.classList.add('animate')
     },100)
 });  
-const proyectos = document.querySelector('.container__fondo-proyectos')
+const proyectos = document.querySelector('.container__proyecto-fondo')
 proyectos.addEventListener('click', () => {
   proyectos.classList.remove('animacion')
     setTimeout(()=>{
         proyectos.classList.add('animacion')
+    },100)
+});  
+const achicarimg = document.querySelector('.container__proyecto-image img')
+achicarimg.addEventListener('click', () => {
+  achicarimg.classList.remove('animateimg')
+    setTimeout(()=>{
+        achicarimg.classList.add('animateimg')
     },100)
 }); 
  
