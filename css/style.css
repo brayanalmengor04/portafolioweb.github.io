@@ -115,7 +115,9 @@ html {
     flex-direction: column;     
     width: 100%;
     height: 100vh;  
-    background-color: #010107c9
+    background-color: #010107c9 ; 
+    margin-bottom: 20px;  
+    border-radius: 0 0 5% 5%;
 }
 
 .container__portada-titulo { 
@@ -183,6 +185,8 @@ html {
     width: 100%;
     height: 100vh;
     /* background:#47506e; */
+    margin: 10px 0;
+    border-radius: 0 0 5% 5%;
 }
 
 .container__sobremi-texto{
@@ -191,7 +195,9 @@ html {
     height: 100%;
     /* background: #090425cc; */
     /* background-color: #01010794; */
-    background-color: #010107c9;
+    background-color: #010107c9; 
+    margin: 10px 0;
+    border-radius: 5% 5% 5% 5%;
 }
 .container__sobremi-texto p{  
     float: right;
@@ -269,8 +275,8 @@ html {
     width: 100%;
     height: 100%; 
     background: #131620;
-    
     z-index: 20;
+    border-radius: 5% 5% 5% 5%;
 }
 /* Cada vez que quite esto se anima */
 .container__sobremi-porfile.animate{
@@ -346,6 +352,8 @@ html {
     height: 100vh; 
     background: #232327ea; 
     background-color: #010107c9;
+    margin: 20px 0;
+    border-radius: 5% 5% 5% 5%;
 } 
  
 
@@ -404,7 +412,9 @@ html {
     
     width: 100%; 
     height: 100vh;
-    background-color: #010107c9;   
+    background-color: #010107c9;
+    margin: 10px 0 0 0;   
+    border-radius: 5% 5% 0 0;
 }
 .container__principal-proyectos{
     position: relative;
@@ -439,6 +449,7 @@ html {
     height: 100vh;
     z-index: 3;
     background: #131620;
+    border-radius: 5% 5% 0 0;
 }
 .container__proyecto-fondo.animacion{
     animation: mover 3s both;
@@ -710,7 +721,8 @@ html {
         background-size: cover;
         width: 100%;
         height: 100vh;  
-    } 
+    }
+     
     .container__portada-titulo  h1{
         white-space: pre-wrap;
         animation: none;
@@ -730,6 +742,13 @@ html {
     .container__portada-titulo {
         text-align: center;
         padding: 10px;
+    }
+    .cotainer__portada-boton button{ 
+        font-size: 1.3em;
+        width: 200px;
+    }
+    .cotainer__portada-boton button:hover{
+        width: 220px; 
     }
 
     .container__social {
@@ -844,7 +863,7 @@ html {
 
     @keyframes mover {
         0%{height:100vh ;}
-        100%{height: 15vh; font-size: 0.6em;}
+        100%{height: 15vh; background: transparent;}
     }
     .container__proyecto-proyectos{ 
         position: relative;
@@ -858,9 +877,10 @@ html {
         overflow-x: scroll; 
         scroll-snap-type: x mandatory;
     }
-    .container__proyecto-proyectos img { 
+    .container__proyecto-proyectos img {  
         scroll-snap-align: start; 
-        width: 400px; 
+        width: 400px;
+        height: 400px; 
         object-fit: cover;
     }
     
