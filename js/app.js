@@ -23,12 +23,15 @@ proyectos.addEventListener('click', () => {
         proyectos.classList.add('animacion')
     },100)
 });  
- 
-function mostrar (){
-    document.querySelector('.proyectos p').style.visibility='visible';
-} 
 
-function noMostrar(){
-    document.querySelector('.proyectos p').style.visibility='hidden';
-}
+document.addEventListener('scroll' ,()=>{
+    const barranavegacion = document.querySelector('.container__ul-principal scrolled'); 
+    if(window.scrollY>0){
+        barranavegacion.classList.add('.scrolled');
+    }
+    else{
+        barranavegacion.classList.remove('.scrolled');
+    }
+});
+
 
