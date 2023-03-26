@@ -110,12 +110,31 @@ html {
 
 .container__portada {   
     display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;   
+    background-color: #010107c9 ; 
+}
+.container__portada__img {
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;     
-    width: 100%;
+    width: 50vw; 
     height: 100vh;  
-    background-color: #010107c9 ; 
+} 
+.container__portada__img img{   
+    filter: brightness(0.9);  
+    border-radius: 100%;
+    object-fit: cover;
+    width: 90%;
+    height: 70vh;
+}
+.container__portada__titulo-contenido{
+    display: flex; 
+    justify-content: center;  
+    align-items: center;
+    flex-direction: column;
 }
 
 .container__portada-titulo { 
@@ -160,7 +179,7 @@ html {
 .cotainer__portada-boton{
     margin-top: 20px;
 }
-.cotainer__portada-boton button { 
+.cotainer__portada-boton button {  
     font-size: 1.5em; 
     background: transparent; 
     color: #fff;
@@ -306,9 +325,7 @@ html {
 .container__porfile img {
     width: 300px;
     border-radius: 50%; 
-    /* filter: contrast(200%); */ 
-    filter: saturate(300%); 
-    filter: brightness(0.8); 
+    filter: brightness(0.9); 
 }
 
 
@@ -709,11 +726,32 @@ html {
     /* fin nav */
 
     .container__portada{ 
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
         background-size: cover;
         width: 100%;
         height: 100vh;  
     }
-     
+    .container__portada__img { 
+        width: 100%;  
+    } 
+    .container__portada__img img {  
+        width: 300px; 
+        height: 300px;
+    }
+    .container__portada__titulo-contenido{
+        width: 100%; 
+        height: 100%; 
+        
+    } 
+    .container__portada__titulo-contenido h1 ,buutom{
+        font-size: 4em;
+    }
+    .container__portada__titulo-contenido >.cotainer__portada-boton{
+        margin: 0 0 20px 0; 
+
+    }     
     .container__portada-titulo  h1{
         white-space: pre-wrap;
         animation: none;
