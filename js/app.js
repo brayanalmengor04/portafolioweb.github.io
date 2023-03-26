@@ -24,14 +24,5 @@ proyectos.addEventListener('click', () => {
     },100)
 });  
 
-document.addEventListener('scroll' ,()=>{
-    const barranavegacion = document.querySelector('.container__ul-principal scrolled'); 
-    if(window.scrollY>0){
-        barranavegacion.classList.add('.scrolled');
-    }
-    else{
-        barranavegacion.classList.remove('.scrolled');
-    }
-});
 
 
