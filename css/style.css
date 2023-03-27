@@ -247,6 +247,7 @@ html {
     justify-content: center; 
     margin-top: 50px;
 }
+
 .container__descargarcv a{
     text-align: center; 
     text-decoration: none;
@@ -450,14 +451,12 @@ html {
     
     position: absolute; 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; 
-    flex-direction: column;
     width: 100%;
     height: 100vh;
     z-index: 3;
     background: #131620;
-    border-radius: 5% 5% 0 0;
 }
 .container__proyecto-fondo.animacion{
     animation: mover 3s both;
@@ -465,7 +464,7 @@ html {
 
 @keyframes mover {
     0%{height: 100%;}
-    100%{height: 20%;border-radius: 0 0 20px 20px; }
+    100%{height: 5% ;background: transparent;}
 }
 .container__proyecto-fondo h2{
     font-size: 3em;
@@ -897,19 +896,21 @@ html {
     .container__proyecto-proyectos{ 
         position: relative;
         display: flex; 
-        justify-content: flex-start; 
+        justify-content: space-between;  
+        align-items: center;
         flex-wrap: nowrap;
-        max-width: 400px; 
         margin: 0 auto ;
-        width: 100%;
+        width: 100%; 
+        max-width: 400px; 
         height: 70vh;
         overflow-x: scroll; 
-        scroll-snap-type: x mandatory;
-    }
-    .container__proyecto-proyectos img {  
+        scroll-snap-type: x mandatory; 
+    } 
+    
+    .proyectos img{
+        border-radius: 0px; 
+        width: 400px; 
         scroll-snap-align: start; 
-        width: 400px;
-        height: 400px; 
         object-fit: cover;
     }
     
