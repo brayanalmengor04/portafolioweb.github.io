@@ -106,7 +106,92 @@ html {
 /* Fin section nav */
 
 
-/* Section Portada--- */
+/* Section Portada--- */ 
+
+.container__principal-historia{ 
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100vh; 
+    background: #130e20;
+    z-index: 9999;   
+    display: none;
+    
+}
+
+
+.container__historia {  
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 2px 2px 50px  rgb(44, 16, 53);
+    width: 80%; 
+    height: 80%;
+    background: #322449;  
+    flex-wrap: wrap; 
+    border-radius: 20px;
+
+} 
+.historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 50%; 
+    
+} 
+
+.historia h2 {  
+    width: 50%;  
+    text-align: center;
+    font-size: 3em;
+    color: #d5c5e9; 
+    border-bottom: 3px solid rgb(214, 165, 243);
+} 
+
+.historia p {
+    
+    text-align: center;
+    color: #c9bebe;
+    font-size: 1.3em;  
+    margin: 20px 0;
+    line-height: 30px; 
+    width: 100%;
+    height: 350px; 
+    overflow-y: scroll; 
+    background: #09060f57;    
+    border-radius: 30px;
+}
+
+.container__historia-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.container__historia-img img {
+    width: 400px;
+    height: auto;
+}
+
+.container__historia button { 
+    cursor: pointer;
+    font-size: 1.3em;
+    color: #e2c9f3;
+    background: transparent; 
+    border-radius: 20px;
+    margin: 10px 0;
+    width: 20%; 
+
+} 
+.container__historia button:hover { 
+    color: #b582f0;
+    background: #2b0a31de; 
+    border-color: #160620;
+    width: 25%;
+}
 
 .container__portada {   
     display: flex; 
@@ -261,7 +346,8 @@ html {
 } 
 .container__descargarcv a:hover{ 
     transition: all 1.5s;
-    background: #11012e;
+    background: #11012ecb;
+    padding: 10px 40px 10px;
     color: #9657dd;
 }
 .container__encuentrame-iconos{
@@ -278,7 +364,8 @@ html {
 .container__encuentrame-iconos:hover{ 
     transition: all 1s; 
     transform: translateY(-20px);
-    background: #c0c3f0;
+    /* background: #c0c3f0; */
+    background: #11012ecb;
 }
 /* Controlar js */
 .container__sobremi-porfile{ 
@@ -722,8 +809,48 @@ html {
     }
     /* ------------ */
 
-    /* fin nav */
+    /* fin nav */  
+    .container__historia {
+        flex-wrap: wrap;
+    }  
 
+    .historia { 
+        order: 2;
+        width: 100%; 
+    }
+    .historia h2{  
+        width: 30%;
+        cursor: default;
+        font-size: 1.5em; 
+        text-shadow: 3px 3px 3px #2d1938;
+    }
+    .historia p{ 
+        cursor: default;
+        width: 80%;
+        height: 200px;
+        font-size: 1.2em; 
+        border-radius: 10px;
+    }
+    .container__historia-img{
+        order: 1;
+        width: 100%; 
+        
+    }
+    .container__historia-img img {
+        width: 200px;
+    }
+    
+    .container__historia button { 
+        order: 3;
+        width: 40%; 
+        height: 50px;
+    } 
+    .container__historia button:hover {
+        width: 50%;
+        height: 50px;
+    }
+    
+    /* */
     .container__portada{ 
         justify-content: center; 
         align-items: center;

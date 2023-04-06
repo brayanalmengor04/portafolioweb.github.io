@@ -23,6 +23,17 @@ proyectos.addEventListener('click', () => {
         proyectos.classList.add('animacion')
     },100)
 });  
+  
+const botonpestaña = document.getElementById("boton_historia"); 
+botonpestaña.addEventListener("click", ()=>{
+    document.querySelector(".container__principal-historia").style.display = "none";
+});
+
+const botonabrirH = document.getElementById("boton-abrirHistoria"); 
+
+botonabrirH.addEventListener("click", ()=>{ 
+    document.querySelector(".container__principal-historia").style.display ="flex";
+})
 
 
 
